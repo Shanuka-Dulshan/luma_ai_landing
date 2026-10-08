@@ -1,0 +1,43 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 40px;
+  padding: 8px 14px;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0; /* prevents the icon squishing if text wraps */
+}
+
+/* --- Primary --- */
+.primary {
+  background: rgb(var(--color-gray-900));
+  border: 1px solid rgb(var(--color-gray-900));
+  color: rgb(var(--color-white));
+}
+
+.primary:hover {
+  background: rgb(var(--color-brand-green));
+  border-color: rgb(var(--color-brand-green));
+}
+
+/* --- Secondary --- */
+.secondary {
+  background: rgb(var(--color-white));
+  border: 1px solid rgb(var(--color-gray-200));
+  color: rgb(var(--color-gray-900));
+}
+
+.secondary:hover {
+  border-color: rgb(var(--color-gray-900));
+}
